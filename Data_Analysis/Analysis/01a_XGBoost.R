@@ -16,7 +16,7 @@ library(dplyr)
 library(SHAPforxgboost)
 
 # Set working directory to Shanghai_T2DM-------------------------------------
-setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific")
+setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/Scientific-Reports-T2D-Glucose-Excursions")
 
 # Increase cores -------------------------------------
 cores <- detectCores()
@@ -58,7 +58,7 @@ print(postprandial_summary)
 hist(postprandial_summary$percentage_1)
 
 # Write to CSV if needed
-write.csv(postprandial_summary, "postprandial_binary_summary.csv", row.names = FALSE)
+write.csv(postprandial_summary, "Data_Analysis/Data/postprandial_binary_summary.csv", row.names = FALSE)
 
 # =============================================================================
 # 4. Data Preparation and Feature Selection
@@ -92,7 +92,7 @@ ID_file_df <- unique(postprandial_df$ID)
 ID_file_df <- as.data.frame(ID_file_df)
 ID_file_df$List_nr <- c(1:nrow(ID_file_df))
 
-write.csv(ID_file_df, "ID_list.csv") 
+write.csv(ID_file_df, "Data_Analysis/Data/ID_list.csv") 
 
 ### Transform data into usable format 
 postprandial_df$ID <- as.character(gsub("_", "", postprandial_df$ID))

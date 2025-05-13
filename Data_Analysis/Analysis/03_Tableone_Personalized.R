@@ -111,14 +111,14 @@ final_summary$Meals_per_day <- NULL
 sum(final_summary$Hypoglycemia)
 
 # Save final summary
-write.csv(final_summary, "Tableone_final_df.csv")
+write.csv(final_summary, "Data_Analysis/Data/Tableone_final_df.csv")
 
 # =============================================================================
 # 6. Model Performance Analysis
 # =============================================================================
 # Load comparison data
 comparison_df <- read.csv("Data_Analysis/Data/model_performance_comparison.csv")
-final_summary <- read.csv("Tableone_final_df.csv")
+final_summary <- read.csv("Data_Analysis/Data/Tableone_final_df.csv")
 final_summary <- final_summary %>% select(-X)
 
 # Load and filter IDs

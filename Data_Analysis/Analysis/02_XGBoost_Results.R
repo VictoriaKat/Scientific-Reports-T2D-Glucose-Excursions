@@ -23,7 +23,7 @@ library(gridExtra)
 # 2. Set Up Environment and Load Data
 # =============================================================================
 # Set working directory
-setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific")
+setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/Scientific-Reports-T2D-Glucose-Excursions")
 
 # Load metrics data for both models
 metrics_person <- read.csv("Data_Analysis/Data/Metrics_personalized_self_reported.csv")
@@ -1008,7 +1008,7 @@ Plot_low_burden <- ggplot(result_low, aes(x = factor(List_Number), y = Percentag
 ggsave("Plots/Feature_Importance_Plot_Low_Burden.png", Plot_low_burden, width = 15, height = 10)
 
 # Optional: Save the data for further analysis
-write.csv(result_low, "all_feature_importance_low_burden.csv", row.names = FALSE)
+write.csv(result_low, "Data_Analysis/Data/all_feature_importance_low_burden.csv", row.names = FALSE)
 
 
 #---------------------------------------------------------

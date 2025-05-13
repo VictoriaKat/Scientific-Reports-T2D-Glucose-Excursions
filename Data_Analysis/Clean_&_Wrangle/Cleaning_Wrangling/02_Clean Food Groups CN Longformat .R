@@ -10,7 +10,7 @@ library(dplyr)
 library(stringr)
 library(readr)
 library(tidyr)
-setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific")
+setwd("/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/Scientific-Reports-T2D-Glucose-Excursions")
 
 # =============================================================================
 # 2. Load and Prepare Data
@@ -261,6 +261,3 @@ df_Food <- df_Food %>% group_by(ID, Day) %>% mutate(Meals_FG_per_day = sum(Meals
 
 write.csv(df_Food, "Data_Analysis/Data/Food_Groups_02.csv", row.names = FALSE)
 
-test <- read.csv('/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific copy/Data_Analysis/Data/Food_Groups.csv')
-test <- unique(test)
-nrow(test)

@@ -21,7 +21,6 @@ library(tidyr)      # For data tidying
 # =============================================================================
 # Read the processed dataset
 data <- read.csv("Data_Analysis/Data/Data_total_04.csv")
-data <- read.csv('/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific copy/Data_Analysis/Data/Data_total_04.csv')
 
 # Convert and format date/time variables
 data$Date <- ymd_hms(data$Date)
@@ -422,7 +421,7 @@ average_meal_time_diff <- Meal_diff %>%
 
 hist(as.numeric(average_meal_time_diff$Average_Meal_time_diff))
 
-write.csv(average_meal_time_diff, "DF_Average_Meal_Time_Diff.csv")
+write.csv(average_meal_time_diff, "Data_Analysis/Data/DF_Average_Meal_Time_Diff.csv")
 
 columns_g <- grep("_g$", names(postprandial_df), value = TRUE)
 
@@ -432,7 +431,7 @@ sd_per_group <- postprandial_df %>%
   group_by(ID) %>%
   summarize(across(all_of(columns_g), sd, na.rm = TRUE, .names = "sd_{col}"))
 
-write.csv(sd_per_group, "DF_Average_Food_Group_sd.csv")
+write.csv(sd_per_group, "Data_Analysis/Data/DF_Average_Food_Group_sd.csv")
 
 summary(postprandial_df)
 ## Remove Data Not Available Meals ---------------------
