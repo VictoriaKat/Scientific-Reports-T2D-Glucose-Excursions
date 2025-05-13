@@ -22,7 +22,7 @@ summary(Shanghai_T2DM_Summary)
 # 3. Import and Process CGM Data
 # =============================================================================
 # Set path for CGM data files
-folder_path <- "/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/T2D-China-Scientific/diabetes_datasets/Shanghai_T2DM"
+folder_path <- "/Users/victoriabrugger/Documents/GitHub/Cursor-Repo/Scientific-Reports-T2D-Glucose-Excursions/diabetes_datasets/Shanghai_T2DM"
 excel_files <- list.files(path = folder_path, full.names = TRUE)
 
 # Define function to process Excel files
