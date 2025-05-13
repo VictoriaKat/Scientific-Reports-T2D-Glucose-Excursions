@@ -1,0 +1,2 @@
+"accuracy_mean","accuracy_sd","accuracy_median","recall_mean","recall_sd","recall_median","precision_mean","precision_sd","precision_median","f1_score_mean","f1_score_sd","f1_score_median","auc_mean","auc_sd","auc_median"
+0.6802,0.1799,0.7,0.7695,0.2954,0.875,0.7383,0.202,0.7143,0.7344,0.1866,0.7692,0.6348,0.1863,0.631
