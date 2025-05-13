@@ -6,13 +6,13 @@ This repository contains the analysis code and data for the article "Predicting 
 ## Repository Structure
 
 ### Data_Analysis/
+- **Clean_&_Wrangle/**
+  - `Cleaning_Wrangling/`: Scripts for data cleaning and preprocessing
+  - `Data_Preparation/`: Scripts for feature engineering and data preparation
 - **Analysis/**
   - `01_Data_Preparation.R`: Initial data preparation and cleaning
   - `02_XGBoost_Results.R`: Analysis of XGBoost model results and performance metrics
   - `03_Tableone_Personalized.R`: Creation of TableOne for participant characteristics
-- **Clean_&_Wrangle/**
-  - `Cleaning_Wrangling/`: Scripts for data cleaning and preprocessing
-  - `Data_Preparation/`: Scripts for feature engineering and data preparation
 - **Data/**
   - Contains all processed and raw data files
   - Includes model performance metrics and feature importance data
